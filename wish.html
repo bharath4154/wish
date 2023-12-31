@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="wish.css">
+</head>
+<body>
+  <div id="container">
+    <div class="birthday-card ">
+      <!-- Inner -->
+      <div class="cover-inner ">
+        <img src="Pra.jpg" width="100%">
+      </div>
+  
+      <!-- Outer -->
+      <div class="cover-outer ">
+          <img src="outer.jpg" width="100%">
+      </div>
+  
+      <!-- Text -->
+      <div class="text">
+          <p class="title">
+              Happy Birthday! <br> Prathyusha
+          </p>
+          <p>
+              I hope your special day will bring you lots of happiness,
+              love, and fun.
+              You deserve them a lot. Enjoy!
+          </p>
+          <p>Hope your day goes great!</p>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <button class="confetti-button" onclick="confetti()">Yay🎉</button>
+    </div>
+   
+ 
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+      const x = document.querySelector("birthday-card").addEventListener("mouseenter", confetti());
+      
+    </script>
+
+</body>
+</html>
